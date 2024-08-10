@@ -1,3 +1,5 @@
+//No es tan necesario esta viws, ya que podemos reutilizar ProductDetail
+
 import { useContext } from "react";
 import { PizzaContext } from "../context/PizzaContext";
 import { useNavigate } from "react-router-dom";
