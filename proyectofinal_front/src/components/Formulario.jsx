@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 
 const Formulario = () => {
-  const [form, setForm] = useState({ nombre: '', email: '', password: '' });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // me falta la logica para crear la cuenta
-  };
 
   return (
     <form onSubmit={handleSubmit}>

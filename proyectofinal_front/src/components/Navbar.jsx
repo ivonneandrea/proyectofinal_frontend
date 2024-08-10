@@ -1,12 +1,13 @@
-import { NavLink } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import { useContext } from "react";
-import { MyContext } from "../context/MyContext.jsx";
-import formatPrice from '../helpers/formatPrice.js'; //preguntar que es esto
+//import { NavLink } from "react-router-dom";
+//import Navbar from "react-bootstrap/Navbar";
+//import { useContext } from "react";
+//import { MyContext } from "../context/MyContext.jsx";
+//import formatPrice from '../helpers/formatPrice.js'; //preguntar que es esto
+
+//ARREGLAR PORQUE HAY PROBLEMAS CON LAS IMPORTACIONES
+
 
 const Navigation = () => {
-    const activeClass = ({ isActive }) => (isActive ? "active" : "inactive");
-    const {totalPrice} = useContext(MyContext);
 
     return (
         <Navbar className="navigation">
@@ -17,7 +18,7 @@ const Navigation = () => {
                 </NavLink>
                 <NavLink className={activeClass} to="/"> Iniciar sesión 
                 </NavLink>
-                <NavLink className={activeClass} to="/cart">Productos  {formatPrice(totalPrice)}
+                <NavLink className={activeClass} to="/cart">Productos
                 </NavLink>
             </section>
         </Navbar>

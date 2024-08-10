@@ -1,12 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from '../views/Home';
 import Productos from './components/Productos';
 import Registro from '../views/Registro';
-import ProductDetail from '../views/ProductDetail';
-import { MyContext } from './context/MyContext';
+//import { MyContext } from './context/MyContext';
+
+//ARREGLAR PORQUE HAY PROBLEMAS CON CONTEXT
 
 const App = () => {
   return (

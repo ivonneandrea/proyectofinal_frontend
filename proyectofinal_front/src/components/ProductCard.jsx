@@ -1,17 +1,15 @@
 import React, { useContext } from 'react';
 import ProductCard from '../components/ProductCard';
-import { MyContext } from '../context/MyContext';
+//import { MyContext } from '../context/MyContext';
+
+//ARREGLAR PORQUE HAY PROBLEMAS CON LA IMPORTACION DE CONTEXT
 
 const Producto = () => {
-  const { products, addToCart } = useContext(MyContext);
 
   return (
     <div>
       <h1>Producto</h1>
       <div className="product-list">
-        {products.map(product => (
-          <ProductCard key={product.id} product={product} onAddToCart={addToCart} />
-        ))}
       </div>
     </div>
   );
